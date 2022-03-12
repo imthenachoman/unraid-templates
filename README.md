@@ -1,2 +1,3 @@
-# unraid-nordlynx
-NordLynx Docker template for unRAID
+# unraid templates
+
+Docker templates for unRAID
