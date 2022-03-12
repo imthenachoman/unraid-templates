@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nordlynx</Name>
+  <Repository>bubuntux/nordlynx</Repository>
+  <Registry>https://hub.docker.com/r/bubuntux/nordlynx/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/imthenachoman/unraid-templates/issues</Support>
+  <Project/>
+  <Overview>NordLynx Docker template for unRAID&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/bubuntux/nordlynx/</Overview>
+  <Category>Security: Network:VPN</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --sysctl net.ipv4.conf.all.src_valid_mark=1 --sysctl net.ipv6.conf.all.disable_ipv6=1</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1647095114</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>NordLynx Docker template for unRAID&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/bubuntux/nordlynx/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>PRIVATE_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>QUERY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.0.0/16</Value>
+      <Name>NET_LOCAL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="PRIVATE_KEY" Target="PRIVATE_KEY" Default="" Mode="" Description="Container Variable: PRIVATE_KEY" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="QUERY" Target="QUERY" Default="" Mode="" Description="Container Variable: QUERY" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="NET_LOCAL" Target="NET_LOCAL" Default="" Mode="" Description="Container Variable: NET_LOCAL" Type="Variable" Display="always" Required="false" Mask="false">192.168.0.0/16</Config>
+</Container>
