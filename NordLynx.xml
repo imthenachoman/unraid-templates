@@ -9,10 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/imthenachoman/unraid-templates/issues</Support>
   <Project/>
-  <Overview>NordLynx Docker template for unRAID&#xD;
-&#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
-&#xD;
+  <Overview>NordLynx Docker template for unRAID
 https://hub.docker.com/r/bubuntux/nordlynx/</Overview>
   <Category>Security: Network:VPN</Category>
   <WebUI/>
@@ -25,9 +22,6 @@ https://hub.docker.com/r/bubuntux/nordlynx/</Overview>
   <DonateText/>
   <DonateLink/>
   <Description>NordLynx Docker template for unRAID&#xD;
-&#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
-&#xD;
 https://hub.docker.com/r/bubuntux/nordlynx/</Description>
   <Networking>
     <Mode>bridge</Mode>
