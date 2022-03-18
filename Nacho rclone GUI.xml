@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nacho-rclone-gui</Name>
+  <Repository>rclone/rclone</Repository>
+  <Registry>https://hub.docker.com/r/rclone/rclone/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/imthenachoman/unraid-templates/issues</Support>
+  <Project/>
+  <Overview>This unRAID application is a Docker container running the rclone GUI (https://rclone.org/gui/).</Overview>
+  <Category>Backup: Cloud: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5572]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/rclone/rclone/master/graphics/logo/logo_symbol/logo_symbol_color_256px.png</Icon>
+  <ExtraParams/>
+  <PostArgs>rcd --rc-web-gui --rc-web-gui-update --rc-web-gui-force-update --rc-web-gui-no-open-browser --rc-addr :5572 --rc-user rclone --rc-pass rclone</PostArgs>
+  <CPUset/>
+  <DateInstalled>1647636358</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This unRAID application is a Docker container running the rclone GUI (https://rclone.org/gui/).</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5572</HostPort>
+        <ContainerPort>5572</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/rclone</HostDir>
+      <ContainerDir>/config/rclone</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>America/New_York</Value>
+      <Name>America/New_York</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="web port" Target="5572" Default="5572" Mode="tcp" Description="Container Port: 5572" Type="Port" Display="always" Required="true" Mask="false">5572</Config>
+  <Config Name="PHP_TZ" Target="America/New_York" Default="America/New_York" Mode="" Description="Container Variable: PHP_TZ" Type="Variable" Display="always" Required="true" Mask="false">America/New_York</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="AppData Config Path" Target="/config/rclone" Default="/mnt/user/appdata/rclone" Mode="rw" Description="Container Path: /config/rclone" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/rclone</Config>
+</Container>
