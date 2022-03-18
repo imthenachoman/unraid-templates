@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>nacho-rclone-gui</Name>
+  <Name>Nacho-Rclone-Native-GUI</Name>
   <Repository>rclone/rclone</Repository>
   <Registry>https://hub.docker.com/r/rclone/rclone/</Registry>
   <Network>bridge</Network>
@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/imthenachoman/unraid-templates/issues</Support>
   <Project/>
-  <Overview>This unRAID application is a Docker container running the rclone GUI (https://rclone.org/gui/).</Overview>
+  <Overview>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).</Overview>
   <Category>Backup: Cloud: Tools:</Category>
   <WebUI>http://[IP]:[PORT:5572]/</WebUI>
   <TemplateURL/>
@@ -17,10 +17,10 @@
   <ExtraParams/>
   <PostArgs>rcd --rc-web-gui --rc-web-gui-update --rc-web-gui-force-update --rc-web-gui-no-open-browser --rc-addr :5572 --rc-user rclone --rc-pass rclone</PostArgs>
   <CPUset/>
-  <DateInstalled>1647636358</DateInstalled>
+  <DateInstalled>1647636536</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>This unRAID application is a Docker container running the rclone GUI (https://rclone.org/gui/).</Description>
+  <Description>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
