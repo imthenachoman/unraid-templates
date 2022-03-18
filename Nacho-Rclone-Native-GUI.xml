@@ -19,7 +19,7 @@ The default username and password is rclone/rclone. To change it, modify the `--
   <ExtraParams/>
   <PostArgs>rcd --rc-web-gui --rc-web-gui-update --rc-web-gui-force-update --rc-web-gui-no-open-browser --rc-addr :5572 --rc-user rclone --rc-pass rclone</PostArgs>
   <CPUset/>
-  <DateInstalled>1647636776</DateInstalled>
+  <DateInstalled>1647636848</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).&#xD;
@@ -60,7 +60,7 @@ The default username and password is rclone/rclone. To change it, modify the `--
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="web port" Target="5572" Default="5572" Mode="tcp" Description="Container Port: 5572" Type="Port" Display="always" Required="true" Mask="false">5572</Config>
+  <Config Name="WebUI" Target="5572" Default="5572" Mode="tcp" Description="Container Port: 5572" Type="Port" Display="always" Required="true" Mask="false">5572</Config>
   <Config Name="PHP_TZ" Target="America/New_York" Default="America/New_York" Mode="" Description="Container Variable: PHP_TZ" Type="Variable" Display="always" Required="true" Mask="false">America/New_York</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
