@@ -9,7 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/imthenachoman/unraid-templates/issues</Support>
   <Project/>
-  <Overview>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).</Overview>
+  <Overview>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).&#xD;
+&#xD;
+The default username and password is rclone/rclone. To change it, modify the `--rc-user` and `--rc-pass` values foor `Extra Parameters` in unRAID's container configuration.</Overview>
   <Category>Backup: Cloud: Tools:</Category>
   <WebUI>http://[IP]:[PORT:5572]/</WebUI>
   <TemplateURL/>
@@ -17,10 +19,12 @@
   <ExtraParams/>
   <PostArgs>rcd --rc-web-gui --rc-web-gui-update --rc-web-gui-force-update --rc-web-gui-no-open-browser --rc-addr :5572 --rc-user rclone --rc-pass rclone</PostArgs>
   <CPUset/>
-  <DateInstalled>1647636536</DateInstalled>
+  <DateInstalled>1647636776</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).</Description>
+  <Description>This unRAID application is a Docker container running rclone's built-in GUI (https://rclone.org/gui/).&#xD;
+&#xD;
+The default username and password is rclone/rclone. To change it, modify the `--rc-user` and `--rc-pass` values foor `Extra Parameters` in unRAID's container configuration.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
