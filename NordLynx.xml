@@ -14,7 +14,7 @@ https://hub.docker.com/r/bubuntux/nordlynx/</Overview>
   <Category>Security: Network:VPN</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://s1.nordcdn.com/nordvpn/media/1.1527.0/images/global/logos/square/nordvpn-48.svg</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --sysctl net.ipv4.conf.all.src_valid_mark=1 --sysctl net.ipv6.conf.all.disable_ipv6=1</ExtraParams>
   <PostArgs/>
   <CPUset/>
